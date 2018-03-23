@@ -138,3 +138,8 @@ body {
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%); }
+
+.row {
+  max-width: 11rem;
+  background-color: #eee;
+  margin: 0 auto; }
