@@ -4,7 +4,7 @@
   "description": "Landing page for Natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css --watch"
+    "compile:sass": "node-sass-chokidar sass/main.scss css/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/BraisC/Natours#readme",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass-chokidar": "^1.2.2"
   },
   "dependencies": {}
 }
