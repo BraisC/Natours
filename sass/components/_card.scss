@@ -1,8 +1,8 @@
 .card{
-    perspective: 150rem; //100vw?
+    perspective: 150rem; //100vw? para que parezca que gira en 3D
     -moz-perspective: 150rem;
     position: relative;
-    height: 52rem;;
+    height: 52rem;
 
     &__side{
         height: 52rem;
