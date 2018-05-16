@@ -676,13 +676,13 @@ body {
       color: #55c57a; }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.795), rgba(40, 180, 133, 0.795)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
   /*clockwise order*/ }
   @media (max-width: 37.5em) {
     .header {
@@ -920,16 +920,17 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0 25rem 0;
-  margin-top: -20vh;
-  /* transform: skewY(-7deg);
-
-    & > *{ //Todo lo que es hijo directo
-        transform: skewY(7deg);
-    } */ }
+  padding: 15rem 0 25rem 0;
+  margin-top: -13vh;
+  transform: skewY(-7deg); }
+  .section-about > * {
+    transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 15rem 0; } }
+      padding: 10rem 0; } }
+  @media (max-width: 37.5em) {
+    .section-about {
+      padding: 8rem 0; } }
 
 .section-features {
   padding: 20rem 0;
