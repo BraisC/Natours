@@ -286,6 +286,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__icon {
@@ -296,6 +299,9 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent; }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
 
 .card {
   perspective: 150rem;
@@ -864,6 +870,9 @@ body {
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 10rem 0; } }
 
 .section-tours {
   background-color: #f7f7f7;
@@ -871,7 +880,7 @@ body {
   margin-top: -10rem; }
   @media (max-width: 56.25em) {
     .section-tours {
-      padding: 20rem 0 10rem 0; } }
+      padding: 18rem 0 10rem 0; } }
 
 .section-stories {
   position: relative;

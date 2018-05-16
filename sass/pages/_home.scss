@@ -26,6 +26,10 @@
     & > *{ //Todo lo que es hijo directo
         transform: skewY(7deg);
     }
+
+    @include respond(tab-port){
+        padding: 10rem 0;
+    }
 }
 
 .section-tours{
@@ -34,7 +38,7 @@
     margin-top: -10rem;
 
     @include respond(tab-port){
-        padding: 20rem 0 10rem 0;
+        padding: 18rem 0 10rem 0;
     }
 }
 
