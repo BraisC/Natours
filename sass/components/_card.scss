@@ -1,5 +1,5 @@
 .card{
-    perspective: 150rem; //100vw? para que parezca que gira en 3D
+    perspective: 150rem; //100vw? para que parezca que gira en 3D 
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
@@ -120,7 +120,7 @@
 
     &__cta{
         @include center;
-        width: 100%;
+        width: 90%;
         text-align: center;
     }
 
@@ -138,5 +138,51 @@
     &__price-value{
         font-size: 6rem;
         font-weight: 100;
+    }
+
+    //MEDIA QUERY
+
+    @include respond(tab-port){
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: $shadow-primary;
+
+        &__side{
+            height: auto;
+            transition: all .8s ease;
+            position: relative;
+            box-shadow: none;
+
+            &--back{ 
+                transform: rotateY(0deg); 
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%)
+            }
+    }
+        &:hover &__side--front{
+            transform: rotateY(0deg); 
+        }
+        
+        &__details{
+            padding: 1rem 0;
+        }
+
+        &__cta{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform: translate(0);
+            text-align: center;
+            padding: 7rem 4rem 4rem 4rem;
+        }
+
+        &__price-box{
+            margin-bottom: 3rem;
+        }
+
+        &__price-value{
+            font-size: 6rem;
+        }
     }
 }
