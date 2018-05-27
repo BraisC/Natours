@@ -1,7 +1,7 @@
 .section-about{
     background-color: $color-grey-light-1;
     padding: 15rem 0 25rem 0;
-    margin-top: -13vh; //Para que no se vea el triangulo blanco
+    margin-top: -15vh; //Para que no se vea el triangulo blanco
     
     transform: skewY(-7deg);
     & > *{ //Todo lo que es hijo directo
@@ -25,7 +25,6 @@
     url(../img/nat-4.jpg);
     background-size: cover;
     transform: skewY(-7deg);
-    margin-top: -10rem;
 
     & > *{ //Todo lo que es hijo directo
         transform: skewY(7deg);

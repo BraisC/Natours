@@ -921,7 +921,7 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 15rem 0 25rem 0;
-  margin-top: -13vh;
+  margin-top: -15vh;
   transform: skewY(-7deg); }
   .section-about > * {
     transform: skewY(7deg); }
@@ -936,8 +936,7 @@ body {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.795), rgba(40, 180, 133, 0.795)), url(../img/nat-4.jpg);
   background-size: cover;
-  transform: skewY(-7deg);
-  margin-top: -10rem; }
+  transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
