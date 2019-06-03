@@ -4,7 +4,7 @@
   "description": "Landing page for Natours",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass-chokidar sass/main.scss css/style.css --watch"
+    "sass": "node-sass-chokidar sass/main.scss css/style.css --watch --source-map true"
   },
   "repository": {
     "type": "git",
